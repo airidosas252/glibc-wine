@@ -7,7 +7,7 @@ sleep 2
 echo "Updating termux-am and all dependencies"
 apt update -y && apt install termux-am xorg-xrandr -y && pkg install x11-repo -y
 apt upgrade -y
-pkg install pulseaudio zenity termux-x11-nightly -y
+pkg install pulseaudio zenity termux-x11-nightly wget -y
 echo "Grant access to your internal storage"
 termux-setup-storage
 sleep 5
