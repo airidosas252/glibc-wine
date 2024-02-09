@@ -19,4 +19,9 @@ echo "Downloading Wine 9.1..."
 wget --progress=bar:force -P $PREFIX/tmp https://github.com/airidosas252/glibc-wine/releases/download/wine/wine-9.1-wow64-esync.tar.xz
 tar -xf $PREFIX/tmp/wine-9.1-wow64-esync.tar.xz -C $PREFIX/glibc/opt/
 rm -r $PREFIX/tmp/*
+clear
+echo "Setting up pacman for updater to work..."
+pkg install pacman -y && pacman-key --init & pacman-key --populate
+echo "Done"
+sleep 2
 glibc-wine --install
