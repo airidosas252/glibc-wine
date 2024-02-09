@@ -5,7 +5,8 @@ echo "Welcome to glibc-wine installer"
 echo "Before we proceed, we need to configure your internal storage to be accessible"
 sleep 2
 echo "Updating termux-am and all dependencies"
-apt update -y && apt install termux-am -y && pkg install x11-repo -y
+apt update -y && apt install termux-am -y 
+pkg install x11-repo -y
 apt upgrade -y
 pkg install pulseaudio zenity termux-x11-nightly wget xorg-xrandr -y
 echo "Grant access to your internal storage"
