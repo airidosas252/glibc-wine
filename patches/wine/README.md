@@ -1,5 +1,7 @@
 This folder contains all the necessary patches for Wine 9.0+
 
+All patches are required for wine to work inside Glibc prefix, only esync one is your own personal preferrence.
+
 You also need to manually introduce esync to your Wine tree with Wine Staging patchset.
 Then you can only use esync.patch to fix certain paths esync looks for.
 
